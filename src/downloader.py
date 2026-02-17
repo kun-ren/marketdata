@@ -8,8 +8,7 @@ def download_ohlcv_with_bidask_aggregate(
     coin='BTC/USDT',
     brokers=['binance', 'okx', 'bybit', 'bitget', 'gate']
 ):
-
-    save_dir = r"../dataset"
+    save_dir = os.environ.get("DATASET_DIR", "/app/dataset")
 
     # 如果目录不存在则创建
     if not os.path.exists(save_dir):
