@@ -1,3 +1,5 @@
+import json
+
 from src.api import find_perp, fetch_ohlcv_with_bidask, fetch_last_n_candles, fetch_ohlcv_with_bidask_aggregated
 
 
@@ -45,8 +47,8 @@ def download_ohlcv_with_bidask_aggregate(
                     "low",
                     "close",
                     "volume",
-                    "bid_volume_sum",
-                    "ask_volume_sum",
+                    "bid_volume",
+                    "ask_volume",
                     "delta"
                 ])
 
@@ -64,8 +66,8 @@ def download_ohlcv_with_bidask_aggregate(
                         l,
                         c,
                         v,
-                        bid_v,
-                        ask_v,
+                        json.dumps(bid_v),
+                        json.dumps(ask_v),
                         delta
                     ])
 
