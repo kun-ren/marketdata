@@ -28,7 +28,7 @@ def download_ohlcv_with_bidask_aggregate(
                 ex,
                 symbol,
                 timeframe='3m',
-                number_candles=5
+                number_candles=40000
             )
 
             # 处理文件名
