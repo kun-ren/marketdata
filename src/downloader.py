@@ -64,8 +64,8 @@ def download_ohlcv_with_bidask_aggregate(
                         l,
                         c,
                         v,
-                        bid_sum,
-                        ask_sum,
+                        bid_v,
+                        ask_v,
                         delta
                     ])
 
