@@ -25,4 +25,4 @@ RUN mkdir -p /app/dataset
 VOLUME ["/app/dataset"]
 
 # 7. 指定启动命令
-CMD ["python", "-m", "src/downloader.py"]
+CMD ["python", "-m", "src.downloader"]
